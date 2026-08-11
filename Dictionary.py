@@ -1,47 +1,45 @@
-# dictionary sequence type 
+# Dictonary sequence type
 
-# making dictionary using key : value
-
-information = { "Name":"Ali","Age":10, "Course":"MA", "Address":"Barsoo"}
+# making dictionary using key:value
+information = { "Name":"Ansar", "Age":22, "Course":"MA"}
 # accessing whole dictionary
 print(information)
 # direct access
-# using keys
-print("Name : ", information["Name"])
-print("Enrolled course is : ", information["Course"])
-# reutrns all the key
-information.keys()
+# using keys 
+print("Name : ",information["Name"])
+print("enrolled course is : ",information["Course"])
+# returns all the keys
+information.keys();
 # returns all the values
-information.values()
-# retrun both the key and values 
-information.items()
-# adding in dictionary
-information["CGPA"] = 8
+information.values();
+# retrun both the values and keys
+information.items();
+# adding in a dictionary
+information["Address"] = "baroo"
 print(information)
 # modifying the values
-information["Course"] = "BA"
+information["Address"] = "Barsoo"
 print(information)
-# key with no value 
+# key with no value
 information["Grade"] = " "
-print(information)
+print (information)
 # delete from dictionary
-del information["Grade"]
+del information["Address"]
 print(information)
-information.pop("Address")
+information.pop("Age")
 print(information)
 information.popitem()
 print(information)
-
 # dictionary with same key
-# the last key value override the same key value that's already existing
-info = { "Name":"Ali","Name":"Nasir"}
+# the last key value override the same key value that's already exesting
+info = {"Name":"ali","Name":"Nasir"}
 print(info)
-
-#using iteration to print the dictionary data in iterative manner
-data = { "Name":"Nadeem", "Age":22,"Course":"BSC","Address":"Barsoo"}
+# using iteration to print the dictiony data in iterative maner
+data = {" Name " : "Ali","Age":22,"Course":"MA","Address":"Baroo","GRADE":"A"}
+# using for loop to print all the data in dictionary
 for key,value in data.items():
     print(f"{key}:{value}")
-
 # copy keyword
+# it copys the whole dictionary to the new dictionary
 datacopy = data.copy()
 print(datacopy)
